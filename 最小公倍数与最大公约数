@@ -1,9 +1,6 @@
----------------------
-n个数字的最小公倍数
-----
-import sys
-import math
 
+n个数字的最小公倍数
+----------------------------
 r=1
 def gcd(m,n):
     if not n:
@@ -22,9 +19,6 @@ for i in input().split():
 
 print(r)
 -----------------------------
-import sys
-import math
-
 def ggt(a,b):
     if b == 0: return a
     else: return ggt(b, a % b)
@@ -37,3 +31,6 @@ x = 1
 for i in input().split():
     x = lcm(x, int(i))
 print(x)
+特别的输入，数字隔断处理，由最大公约数来求解最小公倍数
+----
+
