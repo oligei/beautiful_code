@@ -1,0 +1,36 @@
+import sys
+import math
+
+r=1
+def gcd(m,n):
+    if not n:
+        return m
+    else:
+         return gcd(n, m%n)
+def LCM(m, n): 
+     if m*n == 0:
+         return 0
+     return int(m*n/gcd(m, n))
+     
+n = int(input())
+for i in input().split():
+    m = int(i)
+    r=LCM(r,m)
+
+print(r)
+-----------------------------
+import sys
+import math
+
+def ggt(a,b):
+    if b == 0: return a
+    else: return ggt(b, a % b)
+    
+def lcm(a, b):
+    return a * b // ggt(a,b)
+
+n = int(input())
+x = 1
+for i in input().split():
+    x = lcm(x, int(i))
+print(x)
