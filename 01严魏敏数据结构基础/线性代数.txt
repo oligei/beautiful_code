@@ -1,0 +1,6 @@
+a*b,b*c两矩阵相乘效率为a*c*b
+ABC=(AB)C=A(BC).
+(AB)C = m*n*p + m*p*q,
+A(BC)=n*p*q + m*n*q.
+m*n*p<m*n*q,m*p*q< n*p*q, 所以 (AB)C 最小
+
